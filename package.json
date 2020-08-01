@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/yuxinping1209/wheel/issues"
   },
-  "homepage": "https://github.com/yuxinping1209/wheel#readme"
+  "homepage": "https://github.com/yuxinping1209/wheel#readme",
+  "dependencies": {}
 }
