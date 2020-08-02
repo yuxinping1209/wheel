@@ -20,5 +20,13 @@
     "url": "https://github.com/yuxinping1209/wheel/issues"
   },
   "homepage": "https://github.com/yuxinping1209/wheel#readme",
-  "dependencies": {}
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "alias": {
+    "vue" : "./node_modules/vue/dist/vue.common.js"
+  }
 }
