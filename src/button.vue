@@ -1,10 +1,11 @@
 <template>
   <button :class="{[`icon-${iconPosition}`]:iconPosition}" class="g-button">
-    <svg v-if="icon" class="icon"><use :xlink:href=`#i-${icon}`></use>
-   </svg>
+
     <div class="content">
-      <slot></slot>
+      <slot/>
     </div>
+    <g-icon v-if="icon" class="icon" :name="icon"/>
+
 
   </button>
 </template>
@@ -59,10 +60,7 @@ export default {
       order:2;margin-right:0;margin-left:0.5rem;
     }
   }
-  .icon{
-    width: 1em;
-    height: 1em;
-  }
+
 
 }
 
