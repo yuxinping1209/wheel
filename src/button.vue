@@ -1,10 +1,10 @@
 <template>
-  <button :class="{[`icon-${iconPosition}`]:iconPosition}" class="g-button">
-    <g-icon class="loading" name="loading2"></g-icon>
+  <button :class="{[`icon-${iconPosition}`]:iconPosition}" class="g-button" @click="$emit('click')">
+    <g-icon v-if="loading" class="loading icon" name="loading2"></g-icon>
     <div class="content">
       <slot/>
     </div>
-    <g-icon v-if="icon" class="icon" :name="icon"/>
+    <g-icon v-if="icon&&!loading" class="icon" :name="icon"/>
   </button>
 </template>
 <script>
@@ -18,6 +18,10 @@ export default {
       validator(value) {
         return !(value !== 'left' && value !== 'right')
       }
+    },
+    loading:{
+      type:Boolean,
+      default:false
     }
   }
 }
