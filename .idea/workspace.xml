@@ -29,15 +29,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4e71432-764e-4b46-a756-9907b04602c5" name="Default Changelist" comment="npm install vue">
-      <change afterPath="$PROJECT_DIR$/button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/button.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_TAGS">
@@ -59,7 +65,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.textmate.bundles" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +82,9 @@
       <option name="presentableId" value="Default" />
       <updated>1596115006506</updated>
       <workItem from="1596115013677" duration="2900000" />
-      <workItem from="1596255843368" duration="1386000" />
+      <workItem from="1596255843368" duration="2438000" />
+      <workItem from="1596259664507" duration="2950000" />
+      <workItem from="1596338136566" duration="3174000" />
     </task>
     <task id="LOCAL-00001" summary="npm install vue">
       <created>1596116050221</created>
@@ -86,7 +100,21 @@
       <option name="project" value="LOCAL" />
       <updated>1596256528051</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成按钮基本样式">
+      <created>1596257827024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596257827024</updated>
+    </task>
+    <task id="LOCAL-00004" summary="安装parcel">
+      <created>1596338281751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596338281751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,17 +146,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="npm install vue" />
-    <option name="LAST_COMMIT_MESSAGE" value="npm install vue" />
+    <MESSAGE value="完成按钮基本样式" />
+    <MESSAGE value="安装parcel" />
+    <option name="LAST_COMMIT_MESSAGE" value="安装parcel" />
   </component>
   <component name="WindowStateProjectService">
+    <state width="1150" height="290" key="GridCell.Tab.0.bottom" timestamp="1596282216565">
+      <screen x="0" y="23" width="2048" height="1056" />
+    </state>
+    <state width="1150" height="290" key="GridCell.Tab.0.bottom/0.23.2048.1056@0.23.2048.1056" timestamp="1596282216565" />
+    <state width="1150" height="290" key="GridCell.Tab.0.center" timestamp="1596282216564">
+      <screen x="0" y="23" width="2048" height="1056" />
+    </state>
+    <state width="1150" height="290" key="GridCell.Tab.0.center/0.23.2048.1056@0.23.2048.1056" timestamp="1596282216564" />
+    <state width="1150" height="290" key="GridCell.Tab.0.left" timestamp="1596282216564">
+      <screen x="0" y="23" width="2048" height="1056" />
+    </state>
+    <state width="1150" height="290" key="GridCell.Tab.0.left/0.23.2048.1056@0.23.2048.1056" timestamp="1596282216564" />
+    <state width="1150" height="290" key="GridCell.Tab.0.right" timestamp="1596282216564">
+      <screen x="0" y="23" width="2048" height="1056" />
+    </state>
+    <state width="1150" height="290" key="GridCell.Tab.0.right/0.23.2048.1056@0.23.2048.1056" timestamp="1596282216564" />
     <state x="922" y="249" key="SettingsEditor" timestamp="1596116701257">
       <screen x="0" y="23" width="2048" height="1056" />
     </state>
     <state x="922" y="249" key="SettingsEditor/0.23.2048.1056@0.23.2048.1056" timestamp="1596116701257" />
-    <state x="1114" y="336" key="Vcs.Push.Dialog.v2" timestamp="1596256556158">
+    <state x="1114" y="336" key="Vcs.Push.Dialog.v2" timestamp="1596338288728">
       <screen x="0" y="23" width="2048" height="1056" />
     </state>
-    <state x="1114" y="336" key="Vcs.Push.Dialog.v2/0.23.2048.1056@0.23.2048.1056" timestamp="1596256556158" />
+    <state x="1114" y="336" key="Vcs.Push.Dialog.v2/0.23.2048.1056@0.23.2048.1056" timestamp="1596338288728" />
     <state x="1141" y="273" width="670" height="676" key="search.everywhere.popup" timestamp="1596115323190">
       <screen x="0" y="23" width="2048" height="1056" />
     </state>
