@@ -1,24 +1,22 @@
 <template>
   <button :class="{[`icon-${iconPosition}`]:iconPosition}" class="g-button">
-
+    <g-icon class="loading" name="loading2"></g-icon>
     <div class="content">
       <slot/>
     </div>
     <g-icon v-if="icon" class="icon" :name="icon"/>
-
-
   </button>
 </template>
 <script>
 export default {
   // props:['icon','iconPosition']
-  props:{
-    icon:{},
-    iconPosition:{
-      type:String,
+  props: {
+    icon: {},
+    iconPosition: {
+      type: String,
       // default:'left',
       validator(value) {
-        return !(value!=='left'&&value!=='right')
+        return !(value !== 'left' && value !== 'right')
       }
     }
   }
@@ -26,6 +24,19 @@ export default {
 </script>
 
 <style lang="scss">
+.loading {
+  animation: spin 2s infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .g-button {
   font-size: var(--font-size);
   height: var(--button-height);
@@ -37,27 +48,37 @@ export default {
   justify-content: center;
   align-items: center;
   vertical-align: middle;
-  &:focus{
+
+  &:focus {
     outline: none;
   }
-  &:hover{
+
+  &:hover {
     border-color: var(--border-color-hover);
   }
-  &:active{
+
+  &:active {
     background-color: var(--button-active-bg);
   }
-  .content{
-    order:2;
+
+  .content {
+    order: 2;
   }
-  .icon{
-    order:1;margin-right: 0.5rem;
+
+  .icon {
+    order: 1;
+    margin-right: 0.5rem;
   }
-  &.icon-right{
-    .content{
-      order:1;
+
+  &.icon-right {
+    .content {
+      order: 1;
     }
-    .icon{
-      order:2;margin-right:0;margin-left:0.5rem;
+
+    .icon {
+      order: 2;
+      margin-right: 0;
+      margin-left: 0.5rem;
     }
   }
 
